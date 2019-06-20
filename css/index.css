@@ -258,6 +258,55 @@ nav a:last-child {
   width: 30%;
   margin-bottom: 30px;
 }
+@media (max-width: 500px) {
+  .home {
+    padding: 0 2rem;
+  }
+  .home .content-section {
+    display: inline;
+  }
+  .home .content-section .text-content {
+    width: 100%;
+    padding-right: 1%;
+    padding-top: 3%;
+  }
+  .home .content-section .img-content {
+    width: 100%;
+  }
+  .home .content-section .img-content img {
+    border-radius: 10px;
+  }
+  .home h2 {
+    padding-top: 1rem;
+  }
+  .home #first {
+    border-bottom: 2px dashed #C0C0C0;
+  }
+  .home .inverse-content {
+    padding-bottom: 30px;
+    border-bottom: 2px dashed #C0C0C0;
+    display: flex;
+  }
+  .home .inverse-content .text-content {
+    padding-left: 1%;
+    padding-right: 0;
+    order: -1;
+  }
+  .home .inverse-content .img-content {
+    padding-right: 1%;
+    padding-left: 0;
+  }
+  .home .content-destination {
+    width: 100%;
+  }
+  .home .content-pick {
+    flex-direction: column;
+  }
+  .home .content-pick .destination {
+    width: 100%;
+    padding: 0 5rem;
+  }
+}
 div .btn {
   background: #17A2B8;
   font-size: 3rem;
