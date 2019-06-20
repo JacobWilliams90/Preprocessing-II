@@ -170,11 +170,9 @@ img {
 }
 nav {
   display: flex;
-  flex-wrap: wrap;
   border-bottom: 2px dashed #C0C0C0;
 }
 nav a {
-  align-self: center;
   margin: 0 20px;
   text-decoration: none;
   font-size: 1.6rem;
@@ -182,6 +180,18 @@ nav a {
 }
 nav a:last-child {
   margin-right: 0px;
+}
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+  }
+  nav h1 {
+    text-align: center;
+    width: 100%;
+  }
+  nav a {
+    padding: 1rem 0;
+  }
 }
 .footer {
   width: 100%;
@@ -249,10 +259,28 @@ header div {
   border-bottom: 2px dashed #C0C0C0;
 }
 header h1 {
-  width: 57.5%;
+  width: 50%;
 }
 header h2 {
   padding-top: 2rem;
+}
+header section {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  header h1 {
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+  header section {
+    justify-content: space-around;
+  }
+  header img,
+  header h2,
+  header p {
+    padding: 0 20px;
+  }
 }
 div .btn {
   background: #17A2B8;

@@ -70,17 +70,37 @@ header{
     }
 
     h1{
-      width: 57.5%;
+      width: 50%;
     }  
     h2{
       padding-top: 2rem;
     }
+
+    section{
+      display: flex;
+      align-items: center;
+    }
+
+    @media @mobile{
+
+      h1{
+        width:100%;
+        padding-bottom: 1rem;
+      }
+      section{
+        justify-content: space-around;
+      }
+      img, h2, p{
+        padding: 0 20px;
+      }
+    }
 }
 
 div {
+
   .btn{
     .button(@button-bg, 3rem, white, none);
-    
+
     &:hover{
       background-color: lighten(@button-bg, 20%);
     }
