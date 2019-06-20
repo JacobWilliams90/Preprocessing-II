@@ -125,9 +125,17 @@ div {
 
   .btn{
     .button(@button-bg, 3rem, white, none);
+    cursor: pointer;
 
     &:hover{
       background-color: lighten(@button-bg, 20%);
+      .keyframes(fade-in;{
+        0% { opacity: 1; }
+        100% { opacity: 0; }
+        });
+    
+      .animation(fade-in 1s linear infinite alternate)
+    
     }
   }
 }

@@ -316,7 +316,17 @@ div .btn {
   border-radius: 2rem;
   text-align: center;
   padding: 1rem;
+  cursor: pointer;
 }
 div .btn:hover {
   background-color: #4cd3e9;
+  animation: fade-in 1s linear infinite alternate;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

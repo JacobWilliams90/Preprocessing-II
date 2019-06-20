@@ -9,3 +9,11 @@
     text-align: center;
     padding: 1rem;
 }
+
+.keyframes(@name; @arguments) {
+	@keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+	animation: @arguments;
+}
