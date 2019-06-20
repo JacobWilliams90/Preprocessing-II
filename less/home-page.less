@@ -76,3 +76,13 @@ header{
       padding-top: 2rem;
     }
 }
+
+div {
+  .btn{
+    .button(@button-bg, 3rem, white, none);
+    
+    &:hover{
+      background-color: lighten(@button-bg, 20%);
+    }
+  }
+}

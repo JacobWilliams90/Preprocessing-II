@@ -254,3 +254,16 @@ header h1 {
 header h2 {
   padding-top: 2rem;
 }
+div .btn {
+  background: #17A2B8;
+  font-size: 3rem;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #C0C0C0;
+  border-radius: 2rem;
+  text-align: center;
+  padding: 1rem;
+}
+div .btn:hover {
+  background-color: #4cd3e9;
+}
