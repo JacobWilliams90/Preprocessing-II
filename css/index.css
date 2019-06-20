@@ -171,8 +171,8 @@ img {
 nav {
   display: flex;
   border-bottom: 2px dashed #C0C0C0;
-  justify-content: space-evenly;
-  padding: 2rem;
+  justify-content: space-between;
+  padding: 2rem 28%;
 }
 nav section {
   display: flex;
